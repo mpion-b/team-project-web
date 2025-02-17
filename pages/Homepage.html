@@ -3,11 +3,30 @@
   <head>
     <title>Keeko - Homepage</title>
     <link rel="stylesheet" href="../styles/stylehome.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomakh&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
   </head>
 
   <body>
     <header>
       <div class="logo">The logo</div>
+
+      <form class="search">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search for items"
+        />
+      </form>
+
       <nav class="header-nav">
         <ul>
           <li><a href="#">About</a></li>
@@ -16,13 +35,47 @@
           <li class="login_button"><a href="#">Log in</a></li>
         </ul>
       </nav>
-      <form class="search">
-        <input
-          class="search-input"
-          type="search"
-          placeholder="Search for items"
-        />
-      </form>
     </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Revive</h1>
+          <h1>Reuse</h1>
+          <h1>Relove</h1>
+          <h2>Second-Hand Furniture, First-Class Style</h2>
+          <a href="#" class="shop-now-button">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="New-and-noteworthy">
+        <h2>New and Noteworthy</h2>
+        <div class="New-and-noteworthy-container">
+          <div class="featured-item">
+            <img src="../images/sofa.jpg" alt="Sofa" />
+            <h3>Sofa</h3>
+            <p>$200</p>
+          </div>
+
+          <div class="featured-item">
+            <img src="../images/table.jpg" alt="Table" />
+            <h3>Table</h3>
+            <p>$100</p>
+          </div>
+
+          <div class="featured-item">
+            <img src="../images/chair.jpg" alt="Chair" />
+            <h3>Chair</h3>
+            <p>$50</p>
+          </div>
+
+          <div class="featured-item">
+            <img src="../images/bookshelf.jpg" alt="bookshelf" />
+            <h3>Bookshelf</h3>
+            <p>$60</p>
+          </div>
+        </div>
+
+    </main>
   </body>
 </html>
