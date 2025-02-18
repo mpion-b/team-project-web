@@ -13,15 +13,31 @@ header {
   background: linear-gradient(to right, #155d27, #25a244);
 
   color: white;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  min-width: 1600px;
 }
 
 .logo {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.header-nav {
+  display: flex;
+
+  justify-content: right;
+  align-items: center;
 }
 
 .header-nav ul {
@@ -60,12 +76,11 @@ header {
 
 .search {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   padding: 5px 10px;
   background: #b7efc5;
   border-radius: 15px;
-  margin-right: 15px;
-  margin-left: 15px;
+
   outline: none;
   border: none;
   align-items: center;
@@ -84,12 +99,19 @@ header {
   color: #155d27;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  min-width: 1300px;
+  margin-top: 100px;
+  gap: 100px;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
-  margin-top: 100px;
 }
 
 .hero-text h1 {
@@ -132,13 +154,21 @@ header {
   transition: background-color 0.2s ease;
 }
 
+.hero-image {
+  display: flex;
+  flex-direction: row;
+  height: 750px;
+  width: 750px;
+  justify-content: right;
+}
+
 .New-and-noteworthy {
-  background: #b7efc5;
+  background: #fefae0;
   margin-top: 100px;
   text-align: left;
-  border: #007200 2px solid;
+  min-width: 1400px;
   border-width: 5px;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-right: auto;
   margin-left: auto;
   max-width: max-content;
@@ -166,7 +196,7 @@ p {
   display: flex;
   justify-content: left;
   margin: 0 15px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .New-and-noteworthy-container img {
@@ -183,6 +213,61 @@ p {
 }
 
 .New-and-noteworthy-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.Categories {
+  background: #fefae0;
+  margin-top: 100px;
+  text-align: left;
+  min-width: 1400px;
+  border-width: 5px;
+  border-radius: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: max-content;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.Categories h2 {
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Categories-container h3,
+p {
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+  margin: 0 15px;
+  margin-top: 10px;
+}
+
+.Categories-container img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  max-width: 400px;
+
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+
+.Categories-container img:hover {
+  transform: scale(1.05);
   transition: transform 0.2s ease;
 }
